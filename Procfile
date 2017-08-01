@@ -1,1 +1,1 @@
-web: python3.6.2 launcher.py --log-file -
+web: python3.5 launcher.py --log-file -
