@@ -1,1 +1,1 @@
-web: bash start_red_autorestart.sh
+web: "/usr/bin/python" launcher.py --start --auto-restart
