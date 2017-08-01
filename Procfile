@@ -1,1 +1,1 @@
-web: python3.6 launcher.py --auto-restart
+web: bash start_red_autorestart.sh --log-file -
