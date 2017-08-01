@@ -1,1 +1,1 @@
-web: python3.6 launcher.py --auto-restart --log-file -
+web: python3.6 launcher.py --auto-restart
