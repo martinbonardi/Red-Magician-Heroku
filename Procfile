@@ -1,1 +1,1 @@
-web: bash start_red_autorestart.sh --log-file -
+web: bash start_red_autorestart.sh
