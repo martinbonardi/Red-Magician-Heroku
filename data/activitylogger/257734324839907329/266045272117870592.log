@@ -1,0 +1,19 @@
+2017-06-15 01:11:47 #log @VyrenGames#3859: $modlog
+2017-06-15 01:11:56 #log @VyrenGames#3859: $modset modlog
+2017-06-15 01:11:56 #log @Red Magician#9411: ```\n$modset modlog [channel]\n\nSets a channel as mod log\n\nLeaving the channel parameter empty will deactivate it\n\n```
+2017-06-15 01:33:04 #log @VyrenGames#3859: $cleanup text "$cleanup" 1000
+2017-06-15 01:33:05 #log @VyrenGames#3859 deleted message from 2017-06-15 01:33:04 ($cleanup text "$cleanup" 1000)
+2017-07-07 22:06:50 #log @VyrenGames#3859: $customcom
+2017-07-07 22:06:50 #log @Red Magician#9411: ```\n$[customcom|cc]\n\nCustom commands management\n\nCommands:\n  add    Adds a custom command\n  delete Deletes a custom command\n  edit   Edits a custom command\n  list   Shows custom commands list\n\nType $customcom command for more info on a command.\nYou can also type $customcom category for more info on a category.\n```
+2017-07-07 22:07:25 #log @VyrenGames#3859 edited message from 2017-07-07 22:06:50 ($customcom) to read: $customcom list
+2017-07-07 22:07:26 #log @VyrenGames#3859: $customcom list
+2017-07-07 22:07:26 #log @Red Magician#9411: There are no custom commands in this server. Use `$customcom add` to start adding some.
+2017-07-07 22:07:33 #log @VyrenGames#3859: $customcom add
+2017-07-07 22:07:33 #log @Red Magician#9411: ```\n$customcom add <command> <text>\n\nAdds a custom command\n\nExample:\n[p]customcom add yourcommand Text you want\n\nCCs can be enhanced with arguments:\nhttps://twentysix26.github.io/Red-Docs/red_guide_command_args/\n\n```
+2017-07-07 22:07:50 #log @VyrenGames#3859: https://twentysix26.github.io/Red-Docs/red_guide_command_args/
+2017-07-07 22:07:50 #log @VyrenGames#3859 edited message from 2017-07-07 22:07:50 (https://twentysix26.github.io/Red-Docs/red_guide_command_args/) to read: https://twentysix26.github.io/Red-Docs/red_guide_command_args/
+2017-07-07 22:07:55 #log @VyrenGames#3859: https://twentysix26.github.io/Red-Docs/red_guide_command_args/
+2017-07-07 22:07:56 #log @VyrenGames#3859: https://twentysix26.github.io/Red-Docs/red_guide_command_args/
+2017-07-07 22:07:57 #log @VyrenGames#3859: https://twentysix26.github.io/Red-Docs/red_guide_command_args/
+2017-07-07 22:07:57 #log @VyrenGames#3859: https://twentysix26.github.io/Red-Docs/red_guide_command_args/
+2017-07-07 22:07:58 #log @VyrenGames#3859: https://twentysix26.github.io/Red-Docs/red_guide_command_args/
