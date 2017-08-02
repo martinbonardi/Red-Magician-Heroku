@@ -1,1 +1,1 @@
-web: "/usr/bin/python" launcher.py --start --auto-restart
+web: python3.6 launcher.py --start --auto-restart
