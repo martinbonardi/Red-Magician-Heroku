@@ -23,7 +23,7 @@ else:
 
 
 def _implementation():
-    """Return a dict with the Python implementation and verison.
+    """Return a dict with the Python implementation and version.
 
     Provide both the name and the version of the Python implementation
     currently running. For example, on CPython 2.7.5 it will return
@@ -44,7 +44,7 @@ def _implementation():
         if sys.pypy_version_info.releaselevel != 'final':
             implementation_version = ''.join([
                 implementation_version, sys.pypy_version_info.releaselevel
-                ])
+            ])
     elif implementation == 'Jython':
         implementation_version = platform.python_version()  # Complete Guess
     elif implementation == 'IronPython':
@@ -85,12 +85,16 @@ def info():
         'version': getattr(cryptography, '__version__', ''),
     }
 
+    # OPENSSL_VERSION_NUMBER doesn't exist in the Python 2.6 ssl module.
+    system_ssl = getattr(ssl, 'OPENSSL_VERSION_NUMBER', None)
+    system_ssl_info = {
+        'version': '%x' % system_ssl if system_ssl is not None else ''
+    }
+
     return {
         'platform': platform_info,
         'implementation': implementation_info,
-        'system_ssl': {
-            'version': '%x' % ssl.OPENSSL_VERSION_NUMBER,
-        },
+        'system_ssl': system_ssl_info,
         'using_pyopenssl': pyopenssl is not None,
         'pyOpenSSL': pyopenssl_info,
         'urllib3': urllib3_info,
@@ -101,10 +105,11 @@ def info():
         },
     }
 
+
 def main():
     """Pretty-print the bug information as JSON."""
     print(json.dumps(info(), sort_keys=True, indent=2))
 
+
 if __name__ == '__main__':
     main()
-
