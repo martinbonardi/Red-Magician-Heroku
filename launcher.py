@@ -65,6 +65,10 @@ def parse_cli_arguments():
     parser.add_argument("--repair",
                         help="Issues a git reset --hard",
                         action="store_true")
+    parser.add_argument("-p", "--port",
+                        help="Network port",
+                        type=float,
+                        default=None)
     return parser.parse_args()
 
 
